@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav_all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(75, 75, 75);
+}
+
+.Logo p{
+    font-weight: 800;
+}
+
+.lista_navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img_carrito{
+    width: 3rem;
+}
