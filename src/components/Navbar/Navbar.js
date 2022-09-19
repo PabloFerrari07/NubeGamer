@@ -6,12 +6,12 @@ const Navbar = ()=>{
 
         <nav class="nav_all">
             <div class="Logo">
-            <p>Nube<span>Gamer</span></p>
+            <p>NUBE<span>GAMER</span></p>
             </div>
             <div class="lista_navegacion">
-                <button>Computadoras</button>
-                <button>Perifericos</button>
-                <button>Controles</button>
+                <button class="boton_nav">Computadoras</button>
+                <button class="boton_nav">Perifericos</button>
+                <button class="boton_nav">joysticks</button>
             <div>
                 <Cartwidget/>
             </div>

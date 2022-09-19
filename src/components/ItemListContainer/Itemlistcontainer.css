@@ -1,0 +1,7 @@
+.titulo{
+    /* background-image: url('./assets/portada.jpg'); */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+}

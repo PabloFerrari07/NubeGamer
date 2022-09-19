@@ -2,17 +2,25 @@
 
 *{
     font-family: 'Poppins', sans-serif;
+
 }
 
 .nav_all{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid rgb(75, 75, 75);
+    padding: 1rem;
+    /* border-bottom: 2px solid rgb(75, 75, 75); */
 }
 
 .Logo p{
-    font-weight: 800;
+    font-weight: 500;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+.Logo span{
+    color: #FF1053;
 }
 
 .lista_navegacion{
@@ -21,6 +29,21 @@
     align-items: center;
 }
 
-.img_carrito{
-    width: 3rem;
+.boton_nav{
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    padding: 2rem;
+    color: #242424;
+    border-bottom: 1px solid #d1d1d1;
+    cursor: pointer;
 }
+
+.lista_navegacion .boton_nav:hover{
+    /* transition: all 1s ; */
+    border-bottom: 1px solid #555555;
+    color: #FF1053;
+
+}
+
+
