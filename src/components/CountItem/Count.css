@@ -1,0 +1,16 @@
+.divCount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 2rema; */
+    /* border-radius: 15px; */
+}
+
+.divCount button{
+    background:none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
