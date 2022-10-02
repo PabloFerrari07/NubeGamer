@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+.Hero_all{
+    /* background-color: #1b1b1b; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.hero{
+    background-size: cover;
+    color: #fff;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 70vh;
+    text-align: center;
+}
+
+.hero_img{
+    border-radius: 50%;
+    background-position: center;
+    background-color: #fff;
+
+}
+
+.hero span{
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.hero h1{
+    margin: 0;
+
+}
+
