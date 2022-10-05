@@ -1,12 +1,35 @@
 import './Itemlistcontainer.css';
-import joystick from './assets/joystick.png'
 
-const ItemListContainer = ({saludo}) =>{
+import { getProducts } from '../../AsynkMonk';
+import { useEffect,useState } from 'react';
+import {  useParams } from 'react-router-dom';
+import ItemList from '../ItemList/ItemList';
+
+
+
+const ItemListContainer = () =>{
+
+    const {categoryId} = useParams()
+
+    const [product,setProduct] = useState([])
+
+    useEffect(()=>{
+        getProducts(categoryId).then(res =>{
+            setProduct(res)
+        })
+    },[categoryId])
+
+    console.log(categoryId)
+
     return(
-    <div class="titulo" > 
-        <h1>{saludo}</h1> 
-        <img src={joystick} alt="joystick"/>
+        <div>
+    <div className="titulo" > 
+       <h2>Nuestros productos</h2>
     </div>
+
+    <ItemList products={product}/>
+
+        </div>
     )
 }
 
