@@ -9,8 +9,8 @@ const ItemDetail = ({id, name, price, category, image, description, stock})=>{
     const [add, setAdd] = useState(0)
     
     const {addItem} = useContext(CartContext);
-    const onAdd =(qty)=>{
-        setAdd(qty)
+    const onAdd =(quantity)=>{
+        setAdd(quantity)
     
     
         const productToAdd = { id,name,price,stock}

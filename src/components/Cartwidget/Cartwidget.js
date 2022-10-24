@@ -1,12 +1,12 @@
 import carrito from './assets/carrito.svg'
-import './cartwidget.css'
+// import './cartwidget.css'
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 
 const Cartwidget = () =>{
 
     const {totalQuantity} = useContext(CartContext)
-    console.log(totalQuantity)
+    // console.log(totalQuantity)
     return(
 
         <div className="carrito_contenedor">
