@@ -1,6 +1,8 @@
-import { useState } from 'react';
-import './Count.css'
-const Countitem = ()=>{
+import { useState} from 'react';
+
+import './Count.css';
+
+const Countitem = ({onAdd})=>{
 
     const [count, setcount] = useState(0);
 
@@ -8,6 +10,7 @@ const Countitem = ()=>{
     const increment = () =>{
         if(count < 20){
             setcount( count + 1 );
+        
         }
     };
 
@@ -17,16 +20,25 @@ const Countitem = ()=>{
         }
     };
 
+    
+
     return(
         <div className='divCount'>
-            <p>{count}</p>
-            <button onClick={increment}>+</button>
+            <p >{count}</p>
+ 
+            <button onClick={increment} >+</button>
+ 
+            <div>
             <button onClick={decrement}>-</button>
+            </div>
+
+            <button onClick={()=>onAdd(count)}>Añadir al carrito</button>
         </div>
 
     )
 
 };
+
 
 
 export default Countitem;

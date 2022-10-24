@@ -3,11 +3,11 @@ import joystick from './assets/joystick.png'
 
 const Hero = ()=>{
     return(
-        <div class="Hero_all">
-        <div class="hero">
+        <div className="Hero_all">
+        <div className="hero">
             <h1>Bienvenido al <span>juego</span></h1>
         </div>
-        <div class="hero_img">
+        <div className="hero_img">
         <img src={joystick}/>
 
         </div>

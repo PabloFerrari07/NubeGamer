@@ -1,5 +1,5 @@
 import './Itemlistcontainer.css';
-
+import Hero from '../Hero/Hero'
 import { getProducts } from '../../AsynkMonk';
 import { useEffect,useState } from 'react';
 import {  useParams } from 'react-router-dom';
@@ -19,14 +19,17 @@ const ItemListContainer = () =>{
         })
     },[categoryId])
 
-    console.log(categoryId)
+
 
     return(
         <div>
+            <div className='Hero'>
+                {!categoryId ? <Hero/> : null}
+            </div>
     <div className="titulo" > 
        <h2>Nuestros productos</h2>
     </div>
-
+    {/* <Hero></Hero> */}
     <ItemList products={product}/>
 
         </div>
