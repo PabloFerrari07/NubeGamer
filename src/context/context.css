@@ -1,0 +1,12 @@
+.div_quantity{
+    display: flex;
+    justify-content: space-between;
+}
+
+.p_quantity{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    border: none;
+    font-size: 2rem;
+    /* background-color: white; */
+}

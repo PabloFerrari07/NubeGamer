@@ -3,7 +3,7 @@ import Countitem from '../CountItem/CountItem'
 import { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../context/CartContext'
-const ItemDetail = ({id, name, price, category, image, description, stock})=>{
+const ItemDetail = ({id, name, price, category, image, description, stock,quantity})=>{
 
     
     const [add, setAdd] = useState(0)
@@ -13,7 +13,7 @@ const ItemDetail = ({id, name, price, category, image, description, stock})=>{
         setAdd(quantity)
     
     
-        const productToAdd = { id,name,price,stock}
+        const productToAdd = { id,name,price,stock,image,quantity}
     
         addItem(productToAdd)
  
@@ -38,7 +38,7 @@ const ItemDetail = ({id, name, price, category, image, description, stock})=>{
             add === 0 ? (
                 <Countitem onAdd={onAdd} stock= {stock}/>
             ):(
-                <Link to={`/cart`}>ENVIAR</Link>
+                <Link className='link_detail' to={`/cart`}>Realizar compra</Link>
             )
         }
 

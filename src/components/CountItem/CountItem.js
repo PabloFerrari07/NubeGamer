@@ -26,13 +26,13 @@ const Countitem = ({onAdd})=>{
         <div className='divCount'>
             <p >{count}</p>
  
-            <button onClick={increment} >+</button>
+            <button onClick={increment}  className="buttons_count">+</button>
  
             <div>
-            <button onClick={decrement}>-</button>
+            <button onClick={decrement} className="buttons_count">-</button>
             </div>
 
-            <button onClick={()=>onAdd(count)}>Añadir al carrito</button>
+            <button onClick={()=>onAdd(count)} className="buttton_countAdd">Añadir al carrito</button>
         </div>
 
     )

@@ -17,3 +17,11 @@
     text-align: left;
     color: #fff;
 }
+
+.link_detail{
+    text-decoration: none;
+    padding: 20px 50px 20px 50px;
+    background-color: #e92604;
+    color: #fff;
+    margin-top: 12rem;
+}

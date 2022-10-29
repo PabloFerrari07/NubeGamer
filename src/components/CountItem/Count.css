@@ -6,7 +6,7 @@
     /* border-radius: 15px; */
 }
 
-.divCount button{
+.buttons_count {
     background:none;
     border: none;
     color: #e92604;
@@ -14,3 +14,10 @@
     font-size: 2rem;
 }
 
+
+.buttton_countAdd{
+    background-color: #e92604;
+    color: #fff;
+    padding: 20px 50px 20px 50px;
+    border: none;
+}
