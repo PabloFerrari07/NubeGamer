@@ -1,0 +1,21 @@
+.Offer{
+    background-color: #fff;
+    /* padding: 2rem; */
+    display: flex;
+    margin:auto;
+    padding-top: 15rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about{
+    text-align: left;
+    padding: 1rem;
+}
+
+.about_img img{
+    width: 40rem;
+    height: 30rem;
+    border-radius: 15px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+}

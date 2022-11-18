@@ -7,6 +7,7 @@ import ItemList from '../ItemList/ItemList';
 import {getDocs,collection, query,where} from 'firebase/firestore'
 
 import { db } from '../../services/firebase';
+import DayOffer from '../DayOffer/DayOffer';
 
 
 const ItemListContainer = () =>{
@@ -46,11 +47,12 @@ const ItemListContainer = () =>{
         <div>
             <div className='Hero'>
                 {!categoryId ? <Hero/> : null}
+    {!categoryId ? <DayOffer/> : null}
+       
             </div>
     <div className="titulo" > 
        <h2>Nuestros productos</h2>
     </div>
-
     <ItemList products={product}/> 
 
         </div>

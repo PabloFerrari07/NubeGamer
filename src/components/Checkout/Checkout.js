@@ -78,7 +78,7 @@ const Checkout = ()=>{
             <input name="name" onChange={(e)=> setName(e.target.value)} placeholder="Nombre"/>
             <input name="name" onChange={(e)=> setApellido(e.target.value)} placeholder="apellido"/>
             <input name="name" onChange={(e)=> setEmail(e.target.value)} placeholder="email"/>
-            <input name="name" onChange={(e)=> setPhone(e.target.value)} placeholder="email"/>
+            <input name="name" onChange={(e)=> setPhone(e.target.value)} placeholder="mensaje"/>
             <button onClick={order}>terminar</button>
         </form>
             

@@ -7,10 +7,7 @@ const Hero = ()=>{
         <div className="hero">
             <h1>Bienvenido al <span>juego</span></h1>
         </div>
-        <div className="hero_img">
-        <img src={joystick}/>
-
-        </div>
+  
         </div>
 
         

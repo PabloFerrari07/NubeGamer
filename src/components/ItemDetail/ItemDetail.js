@@ -31,7 +31,7 @@ const ItemDetail = ({id, name, price, category, image, description, stock,quanti
     <h1>Detalle del item</h1>
 
         <p> {name}</p>
-        <p> {price}</p>
+        <p> ${price}</p>
         <p> {description}</p>
         
         {

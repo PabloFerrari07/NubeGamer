@@ -7,10 +7,12 @@ const Item = ( {prod})=>{
 
         <div key={prod.id} className="card">
         <h3>{prod.name}</h3>
-        <p>{prod.price}</p>
         <img src={prod.image}/>
-
+       <div className='card_info'>
+        <p>${prod.price}</p>
         <Link to={`/detail/${prod.id}`}>Ver detalle</Link>
+       </div>
+
         </div>
   
     )
